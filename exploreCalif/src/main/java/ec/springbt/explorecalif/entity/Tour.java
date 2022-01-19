@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Tour {
@@ -31,6 +32,7 @@ public class Tour {
 	@Column
 	private String keywords;
 	
+	@ManyToOne
 	private TourPackage tourpackage;
 	@Column
 	@Enumerated
